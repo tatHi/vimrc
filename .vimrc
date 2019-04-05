@@ -31,7 +31,7 @@ nnoremap <Down> gj
 nnoremap <Up> gk
 " シンタックスハイライトの有効化
 syntax enable
-
+colorscheme darkblue
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
