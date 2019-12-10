@@ -35,7 +35,7 @@ colorscheme darkblue
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
-set list listchars=tab:\▸\-
+" set list listchars=tab:\▸\-
 " Tab文字を半角スペースにする
 set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）
@@ -63,3 +63,12 @@ augroup vimrcEx
   au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
   \ exe "normal g`\"" | endif
 augroup END
+
+" specc check
+set spell
+set spelllang=en,cjk
+
+hi clear SpellBad
+hi SpellBad cterm=underline
+hi clear SpellCap
+hi SpellCap cterm=underline,bold
