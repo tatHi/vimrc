@@ -64,7 +64,7 @@ augroup vimrcEx
   \ exe "normal g`\"" | endif
 augroup END
 
-" specc check
+" spell check
 set spell
 set spelllang=en,cjk
 
@@ -72,3 +72,6 @@ hi clear SpellBad
 hi SpellBad cterm=underline
 hi clear SpellCap
 hi SpellCap cterm=underline,bold
+
+" jj is esc
+inoremap <silent> jj <ESC>
