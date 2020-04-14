@@ -76,6 +76,7 @@ hi SpellCap cterm=underline,bold
 " jj is esc
 inoremap <silent> jj <ESC>
 
-" enable backspace
+" backspace
 set nocompatible
-
+set whichwrap=b,s,h,l,<,>,[,]
+set backspace=indent,eol,start
