@@ -75,3 +75,7 @@ hi SpellCap cterm=underline,bold
 
 " jj is esc
 inoremap <silent> jj <ESC>
+
+" enable backspace
+set nocompatible
+
